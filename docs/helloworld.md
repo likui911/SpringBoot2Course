@@ -1,4 +1,8 @@
-## POM and Classpath Dependencies
+## Requirements
+1. Java 8
+2. Maven 3.3+
+3. Tomcat 9.0
+## POM
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -53,3 +57,4 @@ public class Example {
 
 }
 ```
+
