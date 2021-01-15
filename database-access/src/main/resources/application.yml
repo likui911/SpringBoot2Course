@@ -1,10 +1,10 @@
 spring:
-#  datasource:
-#    username: postgres
-#    password: 123456
-#    url: jdbc:postgresql://127.0.0.1:5432/database_access
-#    driver-class-name: org.postgresql.Driver
-#    pool-size: 30
+  #  datasource:
+  #    username: postgres
+  #    password: 123456
+  #    url: jdbc:postgresql://127.0.0.1:5432/database_access
+  #    driver-class-name: org.postgresql.Driver
+  #    pool-size: 30
 
   datasource:
     username: root

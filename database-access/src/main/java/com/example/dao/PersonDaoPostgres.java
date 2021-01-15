@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("postgres")
 public class PersonDaoPostgres implements PersonDao {
@@ -22,5 +23,20 @@ public class PersonDaoPostgres implements PersonDao {
     @Override
     public int insertPerson(Person person) {
         return 0;
+    }
+
+    @Override
+    public Optional<Person> selectPersonById(long id) {
+        return Optional.empty();
+    }
+
+    @Override
+    public int deletePersonById(long id) {
+        return 0;
+    }
+
+    @Override
+    public List<Person> selectPersonByName(String name) {
+        return null;
     }
 }

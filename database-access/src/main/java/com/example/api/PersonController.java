@@ -29,19 +29,17 @@ public class PersonController {
 
     @GetMapping(params = "name")
     public List<Person> getPersonByName(@RequestParam("name") String name) {
-        System.out.println(name);
-        return null;
+        return personService.getPersonByName(name);
     }
 
     @GetMapping(path = "{id}")
     public Person getPersonById(@PathVariable long id) {
-        System.out.println(id);
-        return null;
+        return personService.getPersonById(id).orElse(null);
     }
 
     @DeleteMapping(path = "{id}")
     public void deletePersonById(@PathVariable int id) {
-        System.out.println(id);
+        personService.deletePersonById(id);
     }
 
     @PutMapping(path = "{id}")
