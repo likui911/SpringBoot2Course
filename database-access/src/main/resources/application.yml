@@ -1,7 +1,14 @@
 spring:
+#  datasource:
+#    username: postgres
+#    password: 123456
+#    url: jdbc:postgresql://127.0.0.1:5432/database_access
+#    driver-class-name: org.postgresql.Driver
+#    pool-size: 30
+
   datasource:
-    username: postgres
+    username: root
     password: 123456
-    url: jdbc:postgresql://127.0.0.1:5432/postgres
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://127.0.0.1:3306/database_access
+    driver-class-name: com.mysql.cj.jdbc.Driver
     pool-size: 30
