@@ -38,13 +38,13 @@ public class PersonController {
     }
 
     @DeleteMapping(path = "{id}")
-    public void deletePersonById(@PathVariable int id) {
-        personService.deletePersonById(id);
+    public int deletePersonById(@PathVariable int id) {
+        return personService.deletePersonById(id);
     }
 
     @PutMapping(path = "{id}")
-    public void updatePerson(@PathVariable int id, @RequestBody Person personToUpdate) {
-        System.out.println(String.format("%s %s", id, personToUpdate.getName()));
+    public int updatePerson(@PathVariable int id, @RequestBody Person personToUpdate) {
+        return personService.updatePerson(id,personToUpdate);
     }
 
 }

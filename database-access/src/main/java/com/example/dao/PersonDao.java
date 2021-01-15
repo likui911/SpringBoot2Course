@@ -15,4 +15,6 @@ public interface PersonDao {
     public int deletePersonById(long id);
 
     public List<Person> selectPersonByName(String name);
+
+    public int updatePerson(long id,Person personToUpdate);
 }

@@ -35,4 +35,8 @@ public class PersonService {
     public List<Person> getPersonByName(String name) {
         return personDao.selectPersonByName(name);
     }
+
+    public int updatePerson(long id,Person personToUpdate){
+        return personDao.updatePerson(id,personToUpdate);
+    }
 }

@@ -39,4 +39,9 @@ public class PersonDaoPostgres implements PersonDao {
     public List<Person> selectPersonByName(String name) {
         return null;
     }
+
+    @Override
+    public int updatePerson(long id, Person personToUpdate) {
+        return 0;
+    }
 }

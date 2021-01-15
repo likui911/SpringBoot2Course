@@ -43,4 +43,14 @@ public class FakePersonDao implements PersonDao {
     public List<Person> selectPersonByName(String name) {
         return DB.stream().filter(person -> person.getName().indexOf(name) != -1).collect(Collectors.toList());
     }
+
+    @Override
+    public int updatePerson(long id, Person personToUpdate) {
+        Optional<Person> person =  selectPersonById(id);
+        if(person.isPresent()){
+            DB.set(DB.indexOf(person.get()),new Person(id,personToUpdate.getName()));
+            return 1;
+        }
+        return 0;
+    }
 }
