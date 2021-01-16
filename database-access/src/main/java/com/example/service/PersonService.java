@@ -12,7 +12,7 @@ import java.util.Optional;
 public class PersonService {
     private final PersonDao personDao;
 
-    public PersonService(@Qualifier("fake") PersonDao personDao) {
+    public PersonService(@Qualifier("postgres") PersonDao personDao) {
         this.personDao = personDao;
     }
 
@@ -36,7 +36,7 @@ public class PersonService {
         return personDao.selectPersonByName(name);
     }
 
-    public int updatePerson(long id,Person personToUpdate){
-        return personDao.updatePerson(id,personToUpdate);
+    public int updatePerson(long id, Person personToUpdate) {
+        return personDao.updatePerson(id, personToUpdate);
     }
 }

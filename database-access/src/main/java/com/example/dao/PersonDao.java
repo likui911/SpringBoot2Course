@@ -16,5 +16,5 @@ public interface PersonDao {
 
     public List<Person> selectPersonByName(String name);
 
-    public int updatePerson(long id,Person personToUpdate);
+    public int updatePerson(long id, Person personToUpdate);
 }

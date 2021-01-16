@@ -46,9 +46,9 @@ public class FakePersonDao implements PersonDao {
 
     @Override
     public int updatePerson(long id, Person personToUpdate) {
-        Optional<Person> person =  selectPersonById(id);
-        if(person.isPresent()){
-            DB.set(DB.indexOf(person.get()),new Person(id,personToUpdate.getName()));
+        Optional<Person> person = selectPersonById(id);
+        if (person.isPresent()) {
+            DB.set(DB.indexOf(person.get()), new Person(id, personToUpdate.getName()));
             return 1;
         }
         return 0;

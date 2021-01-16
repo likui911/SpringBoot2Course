@@ -44,7 +44,7 @@ public class PersonController {
 
     @PutMapping(path = "{id}")
     public int updatePerson(@PathVariable int id, @RequestBody Person personToUpdate) {
-        return personService.updatePerson(id,personToUpdate);
+        return personService.updatePerson(id, personToUpdate);
     }
 
 }
