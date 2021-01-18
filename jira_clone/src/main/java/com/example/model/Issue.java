@@ -32,6 +32,9 @@ public class Issue {
     private List<Integer> userIds;
     private List<Comment> comments;
 
+    public Issue() {
+    }
+
     public Issue(@NotNull Integer id, @NotBlank String title, @NotBlank String type, @NotNull String status, @NotBlank String priority, @NotNull double listPosition, String description, String descriptionText, Integer estimate, Integer timeSpent, Integer timeRemaining, Date createdAt, Date updatedAt, @NotNull Integer reporterId, Integer projectId) {
         this.id = id;
         this.title = title;

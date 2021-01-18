@@ -18,6 +18,9 @@ public class Project {
     private List<Issue> issues;
     private List<User> users;
 
+    public Project() {
+    }
+
     public Project(@NotNull int id, @NotBlank String name, String url, String description, String category, Date createdAt, Date updatedAt) {
         this.id = id;
         this.name = name;

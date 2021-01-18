@@ -11,6 +11,9 @@ public class User {
     private Date updatedAt;
     private int projectId;
 
+    public User() {
+    }
+
     public User(int id, String name, String email, String avatarUrl, Date createdAt, Date updatedAt, int projectId) {
         this.id = id;
         this.name = name;

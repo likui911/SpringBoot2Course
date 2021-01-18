@@ -17,8 +17,7 @@ public class IssueController {
 
     @PostMapping
     public int addIssue(@RequestBody Issue issue) {
-        System.out.println(issue);
-        return 0;
+        return issueService.addIssue(issue);
     }
 
     @GetMapping(path = "{id}")

@@ -18,6 +18,9 @@ public class Comment {
     @NotNull
     private Integer issueId;
 
+    public Comment() {
+    }
+
     public Comment(Integer id, String body, Date createdAt, Date updatedAt, Integer userId, Integer issueId) {
         this.id = id;
         this.body = body;
@@ -31,24 +34,48 @@ public class Comment {
         return id;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public String getBody() {
         return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
     }
 
     public Date getCreatedAt() {
         return createdAt;
     }
 
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
     public Date getUpdatedAt() {
         return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
     }
 
     public Integer getUserId() {
         return userId;
     }
 
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
     public Integer getIssueId() {
         return issueId;
+    }
+
+    public void setIssueId(Integer issueId) {
+        this.issueId = issueId;
     }
 
 }

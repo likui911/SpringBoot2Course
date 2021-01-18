@@ -14,6 +14,10 @@ public class IssueService {
         this.issueDao = issueDao;
     }
 
+    public int addIssue(Issue issue) {
+        return issueDao.insertIssue(issue);
+    }
+
     public int deleteIssue(int id) {
         return issueDao.deleteIssue(id);
     }
