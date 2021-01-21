@@ -5,10 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <import resource="daos.xml"/>
-
-    <bean id="hello" class="com.spring.pojo.Hello">
-        <property name="name" value="Spring"></property>
-    </bean>
+    <import resource="pojos.xml"/>
 
     <bean id="petStore" class="com.spring.services.PetStoreServiceImpl">
         <property name="accountDao" ref="accountDao"/>

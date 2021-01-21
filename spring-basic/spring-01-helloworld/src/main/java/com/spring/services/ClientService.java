@@ -7,4 +7,8 @@ public class ClientService {
     public static ClientService createInstance() {
         return clientService;
     }
+    public void doSomething(){
+        System.out.println(this);
+        System.out.println("doing....");
+    }
 }
